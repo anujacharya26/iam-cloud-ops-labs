@@ -11,3 +11,10 @@ Validate separate admin identity and MFA enrollment.
 ## Why this matters
 - Separate admin identity reduces exposure of privileged roles.
 - MFA for admins is the baseline control for preventing account takeover.
+
+## Evidence
+
+![Lab Admin MFA registered](../screenshots/entra-day4-labadmin-mfa.png)
+
+![Security defaults enabled](../screenshots/entra-day4-security-defaults.png)
+

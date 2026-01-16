@@ -28,3 +28,9 @@ Build a basic RBAC model in Microsoft Entra ID using users + security groups.
 ## What I learned
 - Group-based access is the foundation of RBAC.
 - Joiner/Mover/Leaver (JML) lifecycle becomes manageable when access is group-driven, not user-by-user.
+
+## Evidence
+
+![CF IT members group](../screenshots/entra-day3-cf-it-members.png)
+
+![Groups overview](../screenshots/entra-day3-groups.png)

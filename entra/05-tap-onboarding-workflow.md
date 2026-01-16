@@ -13,3 +13,7 @@ Demonstrate a helpdesk-friendly onboarding method to securely bootstrap MFA.
 - Avoids sharing admin devices or SMS-based bootstrapping.
 - Time-bound access reduces risk.
 - Matches real-world ITSM onboarding processes.
+
+## Evidence
+
+![TAP issued for joiner1](../screenshots/entra-day4-tap-joiner1.png)
