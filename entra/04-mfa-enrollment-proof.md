@@ -18,3 +18,6 @@ Validate separate admin identity and MFA enrollment.
 
 ![Security defaults enabled](../screenshots/entra-day4-security-defaults.png)
 
+![Lab Admin login in isolated (incognito) session](../screenshots/entra-day4-labadmin-incognito-login.png)
+
+
