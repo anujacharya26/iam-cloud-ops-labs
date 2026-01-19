@@ -14,3 +14,24 @@ Grant read-only access to a specific S3 bucket using least privilege.
 
 ## Outcome
 Read-only users can list and download objects without modifying data.
+
+## IAM Policy Snippet
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowListBucket",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::iam-lab-s3-readonly-aa-1234"
+    },
+    {
+      "Sid": "AllowReadObjects",
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::iam-lab-s3-readonly-aa-1234/*"
+    }
+  ]
+}
