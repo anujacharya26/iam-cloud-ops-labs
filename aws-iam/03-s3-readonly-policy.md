@@ -35,6 +35,7 @@ Read-only users can list and download objects without modifying data.
     }
   ]
 }
+```
 
 ## Explicit Deny Guardrail
 
