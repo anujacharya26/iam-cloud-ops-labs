@@ -35,3 +35,24 @@ Read-only users can list and download objects without modifying data.
     }
   ]
 }
+
+## Explicit Deny Guardrail
+
+An explicit deny was added to block `s3:DeleteObject` at the object level.
+This deny overrides any allow policies and prevents accidental or malicious
+deletion of data, even if broader permissions are granted later.
+
+## Explicit Deny Policy Snippet
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ExplicitDenyDeleteObject",
+      "Effect": "Deny",
+      "Action": "s3:DeleteObject",
+      "Resource": "arn:aws:s3:::iam-lab-s3-readonly-aa-1234/*"
+    }
+  ]
+}
